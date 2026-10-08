@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Event Portal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>College Event Portal</h1>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#events">Events</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<section id="home" class="hero">
+    <h2>Welcome to Our College Events</h2>
+    <p>Discover and register for exciting college events.</p>
+    <button onclick="showEvents()">View Events</button>
+</section>
+
+<section id="events">
+    <h2>Upcoming Events</h2>
+
+    <div class="event-grid">
+
+        <div class="event">
+            <h3>Technical Symposium</h3>
+            <p>Date: 15 August 2026</p>
+            <p>Venue: College Auditorium</p>
+            <button onclick="registerEvent('Technical Symposium')">
+                Register
+            </button>
+        </div>
+
+        <div class="event">
+            <h3>Cultural Fest</h3>
+            <p>Date: 20 August 2026</p>
+            <p>Venue: Main Block</p>
+            <button onclick="registerEvent('Cultural Fest')">
+                Register
+            </button>
+        </div>
+
+        <div class="event">
+            <h3>Sports Meet</h3>
+            <p>Date: 25 August 2026</p>
+            <p>Venue: College Ground</p>
+            <button onclick="registerEvent('Sports Meet')">
+                Register
+            </button>
+        </div>
+
+    </div>
+</section>
+
+<section id="registration">
+    <h2>Event Registration</h2>
+
+    <form onsubmit="submitRegistration(event)">
+
+        <input id="studentName"
+               type="text"
+               placeholder="Student Name"
+               required>
+
+        <input id="studentEmail"
+               type="email"
+               placeholder="Email"
+               required>
+
+        <select id="eventName" required>
+            <option value="">Select Event</option>
+            <option>Technical Symposium</option>
+            <option>Cultural Fest</option>
+            <option>Sports Meet</option>
+        </select>
+
+        <button type="submit">Submit Registration</button>
+    </form>
+
+    <p id="registrationMessage"></p>
+</section>
+
+<section id="gallery">
+    <h2>Event Gallery</h2>
+
+    <div class="gallery">
+        <div>🎤 Technical Events</div>
+        <div>🎭 Cultural Events</div>
+        <div>🏆 Sports Events</div>
+        <div>🎓 College Activities</div>
+    </div>
+</section>
+
+<section id="contact">
+    <h2>Contact Us</h2>
+
+    <p>Email: events@college.edu</p>
+    <p>Phone: +91 98765 43210</p>
+    <p>College Auditorium, Chennai</p>
+</section>
+
+<footer>
+    <p>© 2026 College Event Portal</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

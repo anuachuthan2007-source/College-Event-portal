@@ -1,0 +1,142 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f7fb;
+    color: #222;
+}
+
+header {
+    background: #1e293b;
+    color: white;
+    padding: 18px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+    background: #dbeafe;
+}
+
+.hero h2 {
+    font-size: 38px;
+    margin-bottom: 10px;
+}
+
+section {
+    max-width: 1100px;
+    margin: auto;
+    padding: 60px 20px;
+}
+
+section h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+button {
+    padding: 11px 18px;
+    border: none;
+    border-radius: 6px;
+    background: #2563eb;
+    color: white;
+    cursor: pointer;
+}
+
+.event-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.event {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px #ddd;
+}
+
+.event p {
+    margin: 10px 0;
+}
+
+form {
+    max-width: 600px;
+    margin: auto;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 13px;
+    margin-bottom: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+form button {
+    width: 100%;
+}
+
+#registrationMessage {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+}
+
+.gallery div {
+    background: white;
+    padding: 40px 15px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 3px 8px #ddd;
+}
+
+#contact {
+    text-align: center;
+}
+
+#contact p {
+    margin: 8px;
+}
+
+footer {
+    background: #1e293b;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+@media (max-width: 700px) {
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .event-grid,
+    .gallery {
+        grid-template-columns: 1fr;
+    }
+
+    .hero h2 {
+        font-size: 28px;
+    }
+}
